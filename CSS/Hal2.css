@@ -1,0 +1,192 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+ }
+ 
+ body{
+    background-color:#FEF1E6;
+ }
+ 
+ header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 10px auto;
+    position: -webkit-sticky;
+    position: sticky;
+ }
+ 
+ .right{
+    display: flex;
+    gap:10px;   
+    align-items: center;
+ }
+ 
+ .log{
+    width: 60px;
+    height: 50px;
+ }
+ 
+ h1{
+    font-family:fantasy;
+    color:#FFAAA7;
+ }
+ 
+ .left{
+    width: 25%;
+    display: flex;
+    justify-content:flex-end;
+    gap: 10px;
+ }
+ 
+ .kiri{
+    width: 30px;
+    height: 35px;
+ }
+ 
+ nav{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    background: #ffffff;
+    border: 2px solid #FFAFAF;
+ }
+ 
+ nav ul {
+    display: flex;
+    gap: 10px;
+ }
+ 
+ nav ul li{
+    list-style: none;
+ }
+ 
+ nav ul li a{
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    font-size: 100%;
+    text-decoration: none;
+ }
+ 
+ nav ul li  a.tbl{
+    background-color:rgb(238, 137, 151);
+    border-radius: 15px;
+    margin-top: 20px;
+    padding: 10px 20px 10px 20px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight:normal;
+ }
+ 
+ nav ul li  a.tbl:hover{
+    background:rgb(245, 149, 197);
+ }
+ 
+ @import url('https://fonts.googleapis.com/css2? family= Oleo+Script+Swash+Caps & display=swap');
+ .teks {
+     outline: none;
+     text-transform: uppercase;
+     background: linear-gradient(135deg, #FFF9CA 0%, #FF8FB1 25%, #FCE2DB 50%, #cbeb88 75%, #97DBAE 100%);
+     background-size: 400%;
+     margin: 20px auto;
+     text-align: center;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     animation: animate 10s linear infinite;
+ }
+ 
+ @keyframes animate {
+     to {
+         background-position: 400%;
+     }
+ }
+ 
+ #box {
+    padding: 10px;
+ }
+ 
+ .tam {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+    position: relative;
+ }
+ 
+ .cart {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    border: solid black solid;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0px 2px 18px 0 rgb(107 106 106);
+    padding: 10px;
+    box-sizing: border-box;
+    flex-direction: column;
+ }
+ 
+ .gg {
+   width: 100%;
+   height: 200px;
+ }
+ 
+ .price{
+    color:black;
+    margin-top: 0px;
+ }
+ 
+ .title{
+    color: black;
+    text-transform: capitalize;
+    
+    margin-bottom: 0px;
+ 
+ }
+ 
+ footer {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    padding-bottom: 0;
+    justify-content: center;
+    flex-direction: column;
+ }
+ 
+ .icon ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 30px;
+    gap: 8px;
+ }
+ 
+ .icon ul li {
+    list-style: none;
+ }
+ 
+ .gbr {
+    width: 35px;
+    height: 30px;
+ }
+ 
+ .copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(238, 137, 151);
+    width: 100%;
+    height: 30px;
+    font-size: 12px;
+ }
+ 
+ .copy a {
+    color: #fff;
+ }

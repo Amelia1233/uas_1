@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FEF1E6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto;
+    position: -webkit-sticky;
+    position: sticky;
+}
+
+.right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.log {
+    width: 60px;
+    height: 50px;
+}
+
+h1 {
+    font-family: fantasy;
+    color: #FFAAA7;
+}
+
+.left {
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.kiri {
+    width: 30px;
+    height: 35px;
+}
+
+nav {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    background: #ffffff;
+    border: 2px solid #FFAFAF;
+}
+
+nav ul {
+    display: flex;
+    gap: 10px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    font-size: 100%;
+    text-decoration: none;
+}
+
+nav ul a:hover {
+    text-decoration: underline;
+}
+
+nav ul li a.tbl {
+    background-color: rgb(238, 137, 151);
+    border-radius: 15px;
+    margin-top: 20px;
+    padding: 10px 20px 10px 20px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+nav ul li a.tbl:hover {
+    background: rgb(245, 149, 197);
+    text-decoration: none;
+}
+
+section {
+    margin: 50px auto;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+[type=radio] {
+    display: none;
+}
+
+#slider {
+    height: 35vw;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+#slider label {
+    margin: auto;
+    width: 60%;
+    height: 100%;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+#s1:checked~#slide4,
+#s2:checked~#slide5,
+#s3:checked~#slide1,
+#s4:checked~#slide2,
+#s5:checked~#slide3 {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .37);
+    transform: translate3d(-30%, 0, -200px);
+}
+
+#s1:checked~#slide5,
+#s2:checked~#slide1,
+#s3:checked~#slide2,
+#s4:checked~#slide3,
+#s5:checked~#slide4 {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .3), 0 2px 2px 0 rgba(0, 0, 0, .2);
+    transform: translate3d(-15%, 0, -100px);
+}
+
+#s1:checked~#slide1,
+#s2:checked~#slide2,
+#s3:checked~#slide3,
+#s4:checked~#slide4,
+#s5:checked~#slide5 {
+    box-shadow: 0 13px 25px 0 rgba(0, 0, 0, .3), 0 11px 7px 0 rgba(0, 0, 0, .19);
+    transform: translate3d(0, 0, 0);
+}
+
+#s1:checked~#slide2,
+#s2:checked~#slide3,
+#s3:checked~#slide4,
+#s4:checked~#slide5,
+#s5:checked~#slide1 {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .3), 0 2px 2px 0 rgba(0, 0, 0, .2);
+    transform: translate3d(15%, 0, -100px);
+}
+
+#s1:checked~#slide3,
+#s2:checked~#slide4,
+#s3:checked~#slide5,
+#s4:checked~#slide1,
+#s5:checked~#slide2 {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .37);
+    transform: translate3d(30%, 0, -200px);
+}
+
+article {
+    margin: 30px auto;
+    display: grid;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgb(237, 105, 149);
+    height: 20%;
+    width: 60%;
+    background-color: white;
+    color: 564A4A;
+    font-family: 'oleo script swash caps', sans-serif;
+
+}
+
+article p {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h4{
+    text-align: center;
+}
+
+footer {
+    margin: 4rem auto;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    padding-bottom: 0;
+    flex-direction: column;
+}
+
+.icon ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.icon ul li {
+    list-style: none;
+}
+
+.gbr {
+    width: 35px;
+    height: 30px;
+}
+
+.copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(238, 137, 151);
+    width: 100%;
+    height: 30px;
+    font-size: 12px;
+}
+
+.copy a {
+    text-decoration: none;
+    color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+    article{
+       margin: 6rem auto;
+    }
+    article p{
+       margin: 1rem auto;
+    }
+ }
+ @media screen and (max-width: 800px) {
+    article{
+       margin: 2.5rem auto;
+    }
+    article p{
+       margin: 0.5rem auto;
+    }
+    #slider{
+        margin: 5rem auto;
+    }
+    article{
+        margin: 5rem auto;
+    }
+ }
